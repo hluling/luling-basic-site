@@ -1,0 +1,148 @@
+/* ============================================
+   style.css
+   CSS for "How to Use the SONY NX100 Camcorder"
+
+   A CSS rule has 3 parts:
+
+   selector {
+       property: value;
+   }
+
+   The selector picks the HTML element.
+   The property is what we want to change.
+   The value is how we want to change it.
+   ============================================ */
+
+/* ---------- 1. The whole page ---------- */
+
+body {
+    font-family: Arial, sans-serif; /* Use Arial, if not available, use any sans serif font */
+    font-size: 16px;
+    line-height: 1.5;          /* space between lines of text */
+    color: #333333;            /* text color: dark gray */
+    background-color: #f5f7fa; /* page color: light gray-blue */
+    max-width: 800px;          /* keep the page from getting too wide */
+    margin: 0 auto;            /* center the page */
+    padding: 20px;
+}
+
+
+/* ---------- 2. Headings ---------- */
+
+h1 {
+    font-size: 48px;
+    color: #7d1ea2;            
+}
+
+h2 {
+    font-size: 24px;
+    color: #1f3a5f;
+    border-bottom: 2px solid #c62828; /* red line under the heading */
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #c62828;
+}
+
+/*#step1 {
+    font-size: 28px;
+    color: #333333;
+}*/
+
+/* ---------- 3. Image ---------- */
+
+img {
+    max-width: 30%;           /* image never gets wider than the page */
+    height: auto;              /* keep the image's shape */
+    border-radius: 8px;        /* round the corners */
+}
+
+
+/* ---------- 4. Links ---------- */
+
+a {
+    color: #1f6fb2;            /* blue */
+}
+
+/* :hover = when the mouse is on the link */
+a:hover {
+    color: #c62828;
+}
+
+
+/* ---------- 5. "Jump to Steps" navigation ---------- */
+
+/* "nav a" means: only the links inside <nav> */
+nav a {
+    background-color: #1f3a5f;
+    color: white;
+    padding: 4px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+    text-decoration: none;     /* remove the underline */
+}
+
+nav a:hover {
+    background-color: #c62828;
+    color: white;
+}
+
+
+/* ---------- 6. Each step ---------- */
+
+article {
+    background-color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+
+/* ---------- 7. Extra info box (Step 4) ---------- */
+
+aside {
+    background-color: #fff3e0; /* light orange */
+    border-left: 5px solid #ef6c00;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+/* "aside h4" means: only the h4 inside <aside> */
+aside h4 {
+    margin-top: 10px;
+    color: #ef6c00;
+}
+
+
+/* ---------- 8. Styling <strong> ---------- */
+
+strong {
+    /*font-weight: bold;*/
+    font-style: italic;
+}
+
+
+/* ---------- 9. Footer ---------- */
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #cccccc;
+    color: #777777;
+}
+
+/* Remove the bullets from the footer list */
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Show the list items side by side */
+footer li {
+    display: inline-block;
+    margin: 0 10px;
+}
